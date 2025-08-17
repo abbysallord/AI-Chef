@@ -28,7 +28,7 @@ body{
 
 .header:hover img{
   border-radius: 50%;
-  box-shadow: 0 0 10px silver;
+  box-shadow: 0 0 10px gold;
   transition: .3s;
 }
 
