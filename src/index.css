@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: #EDEADE;
+  font-family: inter, sans-serif;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+  padding-inline: 10px;
+  width: 100%;
+  box-shadow: 0 2px 2px lightgray;
+  transition: .3s;
+}
+
+.header img{
+  width: 4rem;
+  margin: 10px 15px;
+  transition: .3s;
+}
+
+.header:hover img{
+  border-radius: 50%;
+  box-shadow: 0 0 10px silver;
+  transition: .3s;
+}
+
+.header:hover h1{
+  letter-spacing: 2px;
+  transition: .3s;
+}
+
+.header h1{
+  font-weight: 300;
+  font-family: inter, sans-serif;
+  font-size: 2.5rem;
+  color: #242424;
+  transition: .3s;
+}
+
+main{
+  padding: 90px 30px 10px;
+}
+
+.add-ingridient-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.add-ingridient-form input{
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  padding: 9px 13px;
+  flex-grow: 1;
+  min-width: 100px;
+  max-width: 400px;
+  box-shadow: 0 0px 2px lightgray;
+  font-family: inter, sans-serif;
+}
+
+.add-ingridient-form button{
+  border-radius: 6px;
+  border: none;
+  color: #fafaf8;
+  background-color: #141413;
+  padding: 9px 13px;
+  font-family: inter, sans-serif;
+  width: 150px;
+  font-size: .875rem;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.add-ingridient-form button:hover{
+  color: #000;
+  background-color: #fff;
+  transform: scale(1.05);
+  transition: .3s;
+  box-shadow: 0 0 9px black;
+}
+
+.add-ingridient-form button::before{
+  content: "+";
+  margin-right: 5px;
+  transition: 1s;
+}
+
+.add-ingridient-form button:focus{
+  background-color: green;
+  color: white;
+}
+
+.get-recipe-container{
+  background-color: #c9c9be;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.get-recipe-container button{
+  margin-left: 20px;
+  background-color: #fff;
+  border: none;
+  font-family: consolas;
+  font-size: 1rem;
+  color: #000;
+  padding: 27px;
+  border-radius: 10px;
+  transition: .4s;
+  font-weight: 700;
+}
+
+.get-recipe-container button:hover{
+  background-color: #000;
+  transition: .4s;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px black;
+  color: #fff;
+}
+
+.suggested-recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 8px;
+}
