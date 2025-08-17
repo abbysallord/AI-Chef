@@ -1,12 +1,11 @@
-# React + Vite
+# Chef Claude
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This bot generates recipe based on user input. Runs using hugging face's Mistral AI API key. For security reasons, I have not included the API key in the repo
 
-Currently, two official plugins are available:
+# How to use
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone this repo to your local machine. Go to ai.js file in the scr folder and add your huggingface API key to the HF_TOKEN constant and run the program using "npm run dev" command. Enjoy.
 
-## Expanding the ESLint configuration
+# Nerd stuff
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Used React for this project and hugging face mistral - "mistralai/Mixtral-8x7B-Instruct-v0.1" model. Used ReactMakdown ( a 3rd party react component ) to stylize the markup output I get from running Mistral. For more details, please refer the code. It isn't a very complex setup and is biggener-friendly code. ATB!
